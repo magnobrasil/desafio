@@ -4,7 +4,10 @@ PROJETO DESAFIO GLOBO.COM
 
 #Pre-requisitos
 
-Instalar a imagem do CENTOS 7 disponível em um máquina virtual
+Baixar e instalar a imagem do CENTOS 7 disponível em um máquina virtual
+
+http://centos.brnet.net.br/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso
+
 
 #Instruções de instalação
 1) Iniciar a maquina virtual com o Centos 7 devidamente instalado
