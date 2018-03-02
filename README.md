@@ -4,7 +4,9 @@ PROJETO DESAFIO GLOBO.COM
 
 #Pre-requisitos
 
-Baixar e instalar a imagem do CENTOS 7 disponível em um máquina virtual
+Baixar e instalar a imagem do CENTOS 7 disponível em um máquina virtual, para instalação na versão minimal será necessário o reboot do sistema para instalação da interface gráfica.
+
+http://mirror.nbtelecom.com.br/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso
 
 http://centos.brnet.net.br/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso
 
@@ -26,11 +28,11 @@ yum install  git curl wget unzip zip python27  -y
 
 curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && python get-pip.py
 
-yum groupinstall "X Window System" -y && yum groupinstall "Fonts" -y && yum install kde-workspace -y && yum install gdm -y && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+#Descomentar a linha abaixo caso a instalação seja a versão minima
 
 
-reboot -n
-
+#yum groupinstall "X Window System" -y && yum groupinstall "Fonts" -y && yum install kde-workspace -y && yum install gdm -y && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target && reboot -n
 
 #Baixando e descompactando arquivos do GIT
 
