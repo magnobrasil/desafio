@@ -22,4 +22,4 @@ cd desafio-master
 
 chmod +x install_full.sh
 
-/opt/projeto/desafio-master/install_full.sh" > install.sh
+/opt/projeto/desafio-master/install_full.sh
