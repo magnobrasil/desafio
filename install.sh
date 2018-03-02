@@ -7,7 +7,7 @@ curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && python get-pip.py
 
 
 # Ambiente Gráfico
-yum groupinstall "X Window System" && yum groupinstall "Fonts" && yum install kde-workspace && yum install gdm && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+yum groupinstall "X Window System" -y && yum groupinstall "Fonts" -y && yum install kde-workspace -y && yum install gdm -y && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
 
 reboot -n
 
