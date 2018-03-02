@@ -6,11 +6,9 @@ yum install  git curl wget unzip zip python27  -y
 curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && python get-pip.py
 
 
-# Ambiente Gráfico
-yum groupinstall "X Window System" -y && yum groupinstall "Fonts" -y && yum install kde-workspace -y && yum install gdm -y && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+#Descomentar a linha abaixo caso a instalação seja a versão minima
 
-reboot -n
-
+#yum groupinstall "X Window System" -y && yum groupinstall "Fonts" -y && yum install kde-workspace -y && yum install gdm -y && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target && reboot -n
 
 #Baixando e descompactando arquivos do GIT
 
