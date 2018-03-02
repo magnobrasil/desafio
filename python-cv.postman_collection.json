@@ -1,0 +1,329 @@
+{
+	"id": "081aa640-a8f7-48bf-8e6a-04d40396bef5",
+	"name": "python-cv",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"c128627a-bf8c-408a-bdda-117389345997",
+		"cf7a375f-d440-428a-9421-1efe95039c22",
+		"324d1081-0e0f-4b97-96cd-b2902fb7657a",
+		"f5934137-381f-45ee-8b85-3ffc5723e8a3",
+		"62839120-1a12-4e12-8363-2f7e64f1a3aa",
+		"72f2a7f1-ad54-4892-9dc6-b902d9133199",
+		"f9b849bb-4484-42f7-8df2-1825108b8c35",
+		"c9a75ef4-6f08-470a-99c9-6fb9a37f2252",
+		"f58a9a7a-cc5c-4729-abf4-c883883235b2",
+		"5d7ad7a3-a3e0-49e1-be59-366de1e56858",
+		"02674730-e08a-4563-b7bf-2cebea77b24f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "02674730-e08a-4563-b7bf-2cebea77b24f",
+			"name": "http://localhost:5000/experiencias",
+			"url": "http://localhost:5000/experiencias",
+			"description": "salve uma experiencia",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"descricao\":\"trabalho na accenture\",\n\t\"cv_id\":\"1\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "324d1081-0e0f-4b97-96cd-b2902fb7657a",
+			"name": "http://localhost:5000/cv/1",
+			"url": "http://localhost:5000/cv/1",
+			"description": "Endpoint que retorna um curriculo especifico",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5d7ad7a3-a3e0-49e1-be59-366de1e56858",
+			"name": "http://localhost:5000/cursos",
+			"url": "http://localhost:5000/cursos",
+			"description": "salva um curso para o CV",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"descricao\":\"curso de linux\",\n\t\"cv_id\":\"1\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "62839120-1a12-4e12-8363-2f7e64f1a3aa",
+			"name": "http://localhost:5000/cvs",
+			"url": "http://localhost:5000/cvs",
+			"description": "retorna um conjunto de cvs",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"nome\":\"Magno de Lima Brasil\",\n\t\"endereco\":\"Rua Itatiba 199  Anchieta Rio de Janeiro RJ  - CEP 21645320\" ,\n\t\"experienciaResumo\":\"Analista Linux, com experi&ecircncia em gest&atilde;o de ambientes Linux/Unix, desenvolvimento Shell, monitoramento Zabbix/Nagios e servidor PABXIP - Asterisk. \",\n\t\"formacaoAcademica\":\"Superior INSTITUTO INFNET\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "72f2a7f1-ad54-4892-9dc6-b902d9133199",
+			"name": "http://localhost:5000/artigos",
+			"url": "http://localhost:5000/artigos",
+			"description": "salva um artigo para um CV",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"descricao\":\"artigo para cienca moderna\",\n\t\"cv_id\":\"1\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c128627a-bf8c-408a-bdda-117389345997",
+			"name": "http://localhost:5000/register",
+			"url": "http://localhost:5000/register",
+			"description": "endpoint para criar um usuário",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\n\t\"username\":\"bernardo\",\n\t\"password\":\"123456\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c9a75ef4-6f08-470a-99c9-6fb9a37f2252",
+			"name": "http://localhost:5000/cv/1",
+			"url": "http://localhost:5000/cv/1",
+			"description": "Endpoint que retorna um curriculo especifico",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cf7a375f-d440-428a-9421-1efe95039c22",
+			"name": "http://localhost:5000/auth",
+			"url": "http://localhost:5000/auth",
+			"description": "endpoint para receber o token de autenticação",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\n\t\"username\":\"bernardo\",\n\t\"password\":\"123456\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f58a9a7a-cc5c-4729-abf4-c883883235b2",
+			"name": "http://localhost:5000/artigo/1",
+			"url": "http://localhost:5000/artigo/2",
+			"description": "recupera todos os artigos",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"descricao\":\"artigo para cienca moderna\",\n\t\"cv_id\":\"1\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f5934137-381f-45ee-8b85-3ffc5723e8a3",
+			"name": "http://localhost:5000/cvs",
+			"url": "http://localhost:5000/cvs",
+			"description": "endpoint que salva um cv",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"nome\":\"Magno de Lima Brasil\",\n\t\"endereco\":\"Rua Itatiba 199  Anchieta Rio de Janeiro RJ  - CEP 21645320\" ,\n\t\"experienciaResumo\":\"Analista Linux, com experi&ecircncia em gest&atilde;o de ambientes Linux/Unix, desenvolvimento Shell, monitoramento Zabbix/Nagios e servidor PABXIP - Asterisk. \",\n\t\"formacaoAcademica\":\"Superior INSTITUTO INFNET\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f9b849bb-4484-42f7-8df2-1825108b8c35",
+			"name": "http://localhost:5000/artigos",
+			"url": "http://localhost:5000/artigos",
+			"description": "recupera todos os artigos",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"descricao\":\"artigo para cienca moderna\",\n\t\"cv_id\":\"1\"\n\n}",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTE5NTAzMjMxLCJuYmYiOjE1MTk1MDMyMzEsImV4cCI6MTUxOTUwMzUzMX0.rbQYpALW4qfLch2yQ-LN2YXYY9Clx5l4v_2Ip_Kd5Zc\nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
