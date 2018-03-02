@@ -24,9 +24,14 @@ echo "#/bin/bash
 yum update -y
 yum install  git curl wget unzip zip python27  -y
 
-curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && python get-pip.py
 
-python get-pip.py
+
+# Ambiente Gráfico
+yum groupinstall "X Window System" && yum groupinstall "Fonts" && yum install kde-workspace && yum install gdm && unlink /etc/systemd/system/default.target && ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+reboot -n
+
 
 #Baixando e descompactando arquivos do GIT
 
